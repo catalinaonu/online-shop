@@ -15,8 +15,6 @@ const getProducts = (number) => {
     return listOfProducts;
 }
 
-console.log(getProducts(10));
-
-export default getProducts();
+export default getProducts;
 
 
