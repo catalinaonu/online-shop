@@ -4,8 +4,10 @@ import filterByDepartments from "./departments";
 
 const products = getProduct(500);
 console.log(products);
+
 const departments = filterByDepartments(products);
-// console.log(categories);
+console.log(departments);
+
 
 function App() {
 

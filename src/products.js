@@ -1,4 +1,4 @@
-import faker  from 'faker';
+import faker from 'faker';
 
 const getProducts = (number) => {
     let listOfProducts = [];
@@ -10,7 +10,7 @@ const getProducts = (number) => {
             price: faker.commerce.price(),
             department: faker.commerce.department()
         }
-       listOfProducts.push(fakeProduct);
+        listOfProducts.push(fakeProduct);
     }
     return listOfProducts;
 }
@@ -18,3 +18,10 @@ const getProducts = (number) => {
 export default getProducts;
 
 
+/*export const getProducts = (count) => Array.from({length: count}).map((_el, _index) => ({
+    id: faker.random.uuid(),
+    name: faker.commerce.productName(),
+    color: faker.commerce.color(),
+    price: faker.commerce.price(),
+    department: faker.commerce.department()
+}))*/

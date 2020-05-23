@@ -1,21 +1,13 @@
 import React from "react";
 
 const filterByDepartments = (products) => {
-    // create an array with all the departments (keys of the final object)
-    let departments = Array.from( new Set (products.map(product => product.department)));
-
-
-
-    console.log(departments);
+    let productsByDepartment = {}
+    products.forEach(product => {
+            product.department in productsByDepartment ? productsByDepartment[product.department].push(product) : productsByDepartment[product.department] = Array.of(product)
+        }
+    );
+    return productsByDepartment
 }
-
-
-
-
-//create an array of values (value = product)
-
-//add value in object
-
 
 export default filterByDepartments;
 
