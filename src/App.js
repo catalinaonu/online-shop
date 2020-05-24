@@ -1,21 +1,22 @@
 import React from 'react';
 import getProduct from './products'
 import filterByDepartments from "./departments";
+import DisplayDepartments from "./DisplayDepartments";
+
+import 'antd/dist/antd.css';
 
 const products = getProduct(500);
-console.log(products);
+// console.log(products);
 
-const departments = filterByDepartments(products);
-console.log(departments);
-
+const productsByDepartment = filterByDepartments(products);
+// console.log(productsByDepartment);
 
 function App() {
-
-  return (
-      <div className="App">
-
-      </div>
-  );
+    return (
+        < div className="App">
+            <DisplayDepartments productsByDepartment={productsByDepartment}/>
+        </div>
+    );
 }
 
 export default App;
