@@ -1,6 +1,6 @@
 import React from 'react';
-import getProduct from './products'
-import filterByDepartments from "./departments";
+import getProduct from './getProducts'
+import filterByDepartments from "./filterByDepartments";
 import DisplayDepartments from "./DisplayDepartments";
 
 import 'antd/dist/antd.css';
