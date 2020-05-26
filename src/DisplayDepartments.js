@@ -1,22 +1,23 @@
 import React from "react";
+import Product from "./DisplayProduct";
 import {Tabs} from "antd";
 
 const {TabPane} = Tabs;
 
 const DisplayDepartments = (props) => {
     const {productsByDepartment} = props;
-    console.log(productsByDepartment)
-
+    console.log(productsByDepartment);
     return (
-        <div>
-            <Tabs defaultActiveKey="1" tabPosition="left" style={{height: 220}}>
-                {[...Object.keys(productsByDepartment)].map(productByDepartment => (
-                    <TabPane tab={productByDepartment} key={productByDepartment}>
-                        {productByDepartment}
-                    </TabPane>
-                ))}
-            </Tabs>
-        </div>
+        <Tabs defaultActiveKey="1" tabPosition="left" >
+            {[...Object.keys(productsByDepartment)].map(department => (
+                <TabPane tab={department} key={department}>
+                    <div>
+                        {/*{department}*/}
+                        {productsByDepartment[department].map(productOfDepartment =><Product product={productOfDepartment} key={productOfDepartment.id}/>)}
+                    </div>
+                </TabPane>
+            ))}
+        </Tabs>
     )
 }
 
