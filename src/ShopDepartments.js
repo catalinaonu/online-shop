@@ -1,10 +1,10 @@
 import React from "react";
-import Product from "./DisplayProduct";
+import Product from "./Product";
 import {Tabs} from "antd";
 
 const {TabPane} = Tabs;
 
-const DisplayDepartments = (props) => {
+const ShopDepartments = (props) => {
     const {productsByDepartment} = props;
     console.log(productsByDepartment);
     return (
@@ -21,4 +21,4 @@ const DisplayDepartments = (props) => {
     )
 }
 
-export default DisplayDepartments
+export default ShopDepartments
