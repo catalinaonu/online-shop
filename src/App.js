@@ -1,7 +1,7 @@
 import React from 'react';
 import getProduct from './getProducts'
 import filterByDepartments from "./filterByDepartments";
-import DisplayDepartments from "./DisplayDepartments";
+import ShopDepartments from "./ShopDepartments";
 
 import 'antd/dist/antd.css';
 
@@ -14,7 +14,7 @@ const productsByDepartment = filterByDepartments(products);
 function App() {
     return (
         < div className="App">
-            <DisplayDepartments productsByDepartment={productsByDepartment}/>
+            <ShopDepartments productsByDepartment={productsByDepartment}/>
         </div>
     );
 }
