@@ -1,9 +1,12 @@
 import React from 'react';
 import getProduct from './getProducts'
 import filterByDepartments from "./filterByDepartments";
+
 import ShopDepartments from "./ShopDepartments";
 
 import 'antd/dist/antd.css';
+import './index.scss'
+
 
 const products = getProduct(500);
 // console.log(products);

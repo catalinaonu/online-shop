@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+$font-stack:    Oxigen, sans-serif;
+$primary-color: #434343;
+$primary-background: #f0f0f0;
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  font-family: 'Oxygen', sans-serif;
-}
+  font: 100% $font-stack;
+  }
 
-$primary-color: #434343;
-$primary-background: #002329;
+
