@@ -9,17 +9,18 @@ const ShopDepartments = (props) => {
     const {productsByDepartment} = props;
     console.log(productsByDepartment);
     return (
-        <Tabs defaultActiveKey="1" tabPosition="left" >
+        <Tabs defaultActiveKey="1" tabPosition="left">
             {[...Object.keys(productsByDepartment)].map(department => (
                 <TabPane tab={department} key={department}>
-                    <div className="products-of-department">
+                    <div className='products-of-department'>
                         {/*{department}*/}
-                                               {productsByDepartment[department].map(productOfDepartment =><Product product={productOfDepartment} key={productOfDepartment.id}/>)}
+                        {productsByDepartment[department].map(productOfDepartment => <Product
+                            product={productOfDepartment} key={productOfDepartment.id}/>)}
                     </div>
                 </TabPane>
             ))}
         </Tabs>
     )
-}
+};
 
 export default ShopDepartments

@@ -5,13 +5,13 @@ import filterByDepartments from "./filterByDepartments";
 import ShopDepartments from "./ShopDepartments";
 
 import 'antd/dist/antd.css';
-import './index.scss'
 
 
 const products = getProduct(500);
 // console.log(products);
 
 const productsByDepartment = filterByDepartments(products);
+
 // console.log(productsByDepartment);
 
 function App() {

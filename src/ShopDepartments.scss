@@ -1,9 +1,10 @@
 @import "./index.scss";
 
-.products-of-department{
+.products-of-department {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left;
   align-items: center;
- }
+  align-content: center;
+}

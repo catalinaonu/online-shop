@@ -9,3 +9,4 @@ const filterByDepartments = (products) => {
 
 export default filterByDepartments;
 
+
