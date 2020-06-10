@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+  flex-direction: row;
+
+  .store {
+    flex: 2;
+  }
+
+  .shopping-list {
+    flex: 1;
+  }
+}
