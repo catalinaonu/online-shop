@@ -1,14 +1,16 @@
 import React from "react";
+import { List } from "antd";
 
 const ShoppingList = (props) => {
     const {shoppingList} = props;
     return (
-        <div>
-            <p>Your shopping list:</p>
-            {props.shoppingList.map(boughtProduct =>
-                boughtProduct.name
-            )}
-        </div>
+        <List
+            header={<div>Shopping List</div>}
+            footer={<div>Footer </div>}
+            bordered
+            dataSource={shoppingList}
+            renderItem={boughtProduct => <List.Item>{boughtProduct.name}</List.Item>}
+        />
     )
 }
 
